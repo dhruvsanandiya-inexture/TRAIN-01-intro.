@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events and Shows</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, serif;
+        }
+
+        body {
+            background: url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819") no-repeat center center/cover;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            padding: 60px;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+
+        /* LEFT SECTION */
+        .left {
+            flex: 1;
+            width: 50%
+        }
+
+
+        .left h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            line-height: 1.7;
+            font-size: 15px;
+            max-width: 500px;
+        }
+
+        /* RIGHT SECTION */
+        .right-container{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .right {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 50%;
+        }
+
+        .event {
+            display: flex;
+            background: #fff;
+            color: #000;
+        }
+
+        .date {
+            background: #222;
+            color: #fff;
+            padding: 25px;
+            width: 120px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .date h2 {
+            font-size: 36px;
+        }
+
+        .date span {
+            font-size: 16px;
+        }
+
+        .details {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .details h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .details p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .details a {
+            text-decoration: none;
+            border: 1px solid #000;
+            padding: 6px 12px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .details a:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="container">
+
+            <!-- LEFT CONTENT -->
+            <div class="left">
+                <div class="left-content">
+                    <h1>EVENTS AND SHOWS</h1>
+                    <p>
+                        With the idea of imparting programming knowledge, Mr. Sandeep Jain, an IIT Roorkee
+                        alumnus started a dream, GeeksforGeeks. Whether programming excites you or you feel
+                        stifled, wondering how to prepare for interview questions or how to ace data
+                        structures and algorithms, GeeksforGeeks is a one-stop solution.
+                    </p>
+                </div>
+            </div>
+
+            <!-- RIGHT EVENTS -->
+            <div class="right-container">
+                <div class="right">
+
+                    <div class="event">
+                        <div class="date">
+                            <h2>15</h2>
+                            <span>March</span>
+                        </div>
+                        <div class="details">
+                            <h3>Where is the event happening?</h3>
+                            <p>
+                                With the idea of imparting programming knowledge, Mr. Sandeep Jain,
+                                an IIT Roorkee alumnus started a dream, GeeksforGeeks.
+                            </p>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="date">
+                            <h2>27</h2>
+                            <span>May</span>
+                        </div>
+                        <div class="details">
+                            <h3>Where is the event happening?</h3>
+                            <p>
+                                Whether programming excites you or you feel stifled,
+                                how to ace data structures and algorithms.
+                            </p>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="date">
+                            <h2>12</h2>
+                            <span>August</span>
+                        </div>
+                        <div class="details">
+                            <h3>Where is the event happening?</h3>
+                            <p>
+                                GeeksforGeeks is a one-stop solution for programmers.
+                            </p>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
