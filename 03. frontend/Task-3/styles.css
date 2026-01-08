@@ -16,7 +16,6 @@
   --font-muted-color: #6b7280;
   --btn-border-radius: 10px;
   --shadow-soft: 0 4px 14px rgba(15, 23, 42, 0.08);
-  --shadow-hover: 0 14px 30px rgba(15, 23, 42, 0.18);
   --radius-lg: 0.75rem;
   --transition-fast: 0.25s ease;
 }
@@ -452,7 +451,7 @@ img {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
+  box-shadow: var(--shadow-soft);
   border-color: var(--primary-color);
 }
 
