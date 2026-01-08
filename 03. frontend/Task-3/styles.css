@@ -45,23 +45,33 @@ img {
   max-width: 100%;
 }
 
-.container {
+.header-container{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0px 120px;
+  padding: 30px 120px 0px 120px;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 120px;
+}
+
+.footer-container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 120px 40px;
 }
 
 .site-header {
   position: sticky;
-  background-color: var(--section-bg-color-2);
-  box-shadow: 0 1px 0 #e5e7eb;
+  background-color: var(--section-bg-color-1);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 120px;
 }
 
 .logo {
@@ -659,8 +669,9 @@ img {
 .footer-bottom {
   border-top: 1px solid #cfcfcf;
   text-align: center;
-  padding: 0.8rem 0;
-  font-size: 0.85rem;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
   color: var(--font-main-color);
 }
 
