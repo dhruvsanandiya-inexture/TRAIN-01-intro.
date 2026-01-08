@@ -11,7 +11,6 @@
   --primary-color: #0D42C9;
   --blue-dark: #1d4ed8;
   --purple: #7c3aed;
-  --bg-page: #f3f4f6;
   --bg-white: #ffffff;
   --text-main: #111827;
   --text-muted: #6b7280;
@@ -24,14 +23,18 @@
 
 body {
   font-family: 'Roboto Flex', sans-serif;
-  background-color: var(--bg-page);
+  background-color: #f3f4f6;
   color: var(--text-main);
   line-height: 1.6;
 }
 
 a {
-  color: inherit;
+  color: var(--text-main);;
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 ul {
@@ -70,13 +73,13 @@ img {
 .main-nav {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .nav-link {
   font-size: 0.95rem;
   color: var(--text-muted);
   position: relative;
-  padding-bottom: 0.1rem;
   transition: color var(--transition-fast);
 }
 
@@ -101,12 +104,12 @@ img {
 
 .btn-nav {
   font-size: 0.9rem;
-  padding: 0.45rem 1.1rem;
-  border-radius: 999px;
+  padding: 1.1rem 1.1rem;
+  border-radius: 10px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
-  background-color: #eff6ff;
   font-weight: 600;
+  background-color: transparent;
   transition:
     background-color var(--transition-fast),
     color var(--transition-fast),
@@ -304,8 +307,8 @@ img {
 }
 
 .feature-card {
-  text-align: center;
-  padding-top: 1.8rem;
+  justify-content: left;
+  padding: 1.8rem;
 }
 
 .feature-icon {
@@ -315,10 +318,9 @@ img {
 }
 
 .icon-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  border: 2px solid var(--primary-color);
+  width: 5em;
+  height: 5em;
+  justify-content: left;
 }
 
 .feature-card h3 {
@@ -331,7 +333,7 @@ img {
 }
 
 .section-consultants {
-  background-color: var(--bg-page);
+  background-color: #f3f4f6;
 }
 
 .consultants-header {
@@ -361,7 +363,7 @@ img {
 .consultants-grid {
   margin-top: 1.7rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -479,7 +481,7 @@ img {
 }
 
 .section-reviews {
-  background-color: var(--bg-page);
+  background-color: #f3f4f6;
 }
 
 .reviews-grid {
@@ -642,6 +644,10 @@ img {
   .power-text h2 {
     font-size: 1.6rem;
   }
+
+  .consultants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -650,5 +656,11 @@ img {
   }
   .hero-main {
     padding-top: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .consultants-grid {
+    grid-template-columns: 1fr;
   }
 }
