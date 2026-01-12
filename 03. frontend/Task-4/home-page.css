@@ -39,7 +39,7 @@ body {
 .nav-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 30px 120px 0px;
 }
 
 .navbar {
@@ -60,13 +60,16 @@ body {
 }
 
 .nav-link.active {
-    color: #FF002E !important;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn-login {
     width: 123px;
     height: 52px;
-    background: #FF002E;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
     color: #fff;
     border-radius: 10px;
     padding: 15px 30px;
@@ -84,18 +87,40 @@ body {
 .btn-signup {
     width: 123px;
     height: 52px;
-    border: 1px solid #FF002E;
-    color: #FF002E;
     background: transparent;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     border-radius: 10px;
     padding: 15px 30px;
     font-weight: 500;
     transition: 0.3s ease;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.btn-signup::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
 }
 
 .btn-signup:hover {
-    background: #FF002E;
-    color: #fff;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    -webkit-text-fill-color: #fff;
 }
 
 /* first hero container -------------------------------------------------------------- */
@@ -110,7 +135,7 @@ body {
     max-width: 1440px;
     height: 631px;
     margin: 0 auto;
-    padding: 0 120px;
+    padding: 60px 120px;
     display: flex;
     align-items: center;
 }
@@ -136,7 +161,10 @@ body {
 }
 
 .hero-title h1 span {
-    color: #FF002E;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-title p {
@@ -154,7 +182,7 @@ body {
 }
 
 .btn-contact {
-    background: #FF002E;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
     color: #fff;
     padding: 15px 30px;
     border-radius: 10px;
@@ -162,7 +190,7 @@ body {
 }
 
 .btn-contact:hover {
-    background: #e00029;
+    opacity: 0.9;
     color: #fff;
 }
 
@@ -211,7 +239,7 @@ body {
     max-width: 1440px;
     height: 753px;
     margin: 0 auto;
-    padding: 120px 120px 60px 120px;
+    padding: 60px 120px;
     display: flex;
     align-items: center;
 }
@@ -259,7 +287,7 @@ body {
 .study-list span {
     width: 26px;
     height: 26px;
-    background: #FF002E;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -325,7 +353,7 @@ body {
 .feature-icon {
     width: 84px;
     height: 84px;
-    background: rgba(255, 0, 46, 0.1);
+    background: linear-gradient(65deg, rgba(255, 81, 47, 0.1) 0%, rgba(221, 36, 118, 0.1) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -352,7 +380,7 @@ body {
 
 /* Ask button */
 .btn-feature {
-    background: #FF002E;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
     color: #fff;
     border-radius: 10px;
     padding: 12px 36px;
@@ -361,7 +389,7 @@ body {
 }
 
 .btn-feature:hover {
-    background: #e00029;
+    opacity: 0.9;
     color: #fff;
 }
 
@@ -474,7 +502,7 @@ body {
     border-radius: 15px 30px 30px 15px;
     padding: 30px 40px;
     border-left: 8px solid;
-    border-image: linear-gradient(98.68deg, #FF512F 0.64%, #DD2476 152.93%);
+    border-image: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
     border-image-slice: 1;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -533,13 +561,25 @@ body {
 
 
 .testimonial-btn.prev {
-    background: rgba(255, 0, 46, 0.08);
-    color: #FF002E;
+    background: rgba(255, 81, 47, 0.08);
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
 }
 
+.testimonial-btn.prev::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 0.08) 0%, rgba(221, 36, 118, 0.08) 100%);
+    z-index: -1;
+}
 
 .testimonial-btn.next {
-    background: #FF002E;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
     color: #fff;
 }
 
@@ -566,8 +606,7 @@ body {
 
 
 
-/* contact image -------------------------------------------------------------------------------- */
-
+/*contactimage ----------------------------------------------------------------------------*/
 .contactimg-container {
     max-width: 1440px;
     height: auto;
@@ -606,15 +645,15 @@ body {
 
 .contactimg-content p {
     color: #fff;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 600;
     line-height: 1.5;
     max-width: 600px;
     margin: 0;
 }
 
 .contactimg-content .btn-contact {
-    background: #FF002E;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
     color: #fff;
     padding: 15px 30px;
     border-radius: 10px;
@@ -627,7 +666,7 @@ body {
 }
 
 .contactimg-content .btn-contact:hover {
-    background: #e00029;
+    opacity: 0.9;
 }
 
 /* -------- Tablet -------- */
@@ -693,7 +732,7 @@ body {
 .footer-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 120px;
+    padding: 60px 120px 30px;
     /* same side spacing as about image */
     display: flex;
     flex-direction: column;
@@ -764,16 +803,23 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background: #F9FAF9;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 0.1) 0%, rgba(221, 36, 118, 0.1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease;
 }
 
-.social img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
+.social:hover {
+    background: linear-gradient(65deg, rgba(255, 81, 47, 0.2) 0%, rgba(221, 36, 118, 0.2) 100%);
+}
+
+.social i {
+    font-size: 20px;
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* ---------------- Divider ---------------- */
@@ -781,9 +827,7 @@ body {
 .footer-divider {
     height: 2px;
     border: none;
-    background: radial-gradient(50% 60000% at 50% 50%,
-            #FC4D34 0%,
-            rgba(237, 57, 84, 0.05) 100%);
+    background: linear-gradient(65deg, rgba(255, 81, 47, 1) 0%, rgba(221, 36, 118, 1) 100%);
 }
 
 /* ---------------- Bottom Row ---------------- */
