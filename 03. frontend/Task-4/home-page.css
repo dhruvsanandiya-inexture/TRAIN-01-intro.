@@ -37,9 +37,16 @@ body {
 }
 
 .nav-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px 120px 0px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .navbar {
