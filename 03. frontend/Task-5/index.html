@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scss</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid nav-container">
+
+    <!-- Logo -->
+    <a class="navbar-brand logo-box" href="#">
+      <img src="images/logo.png" alt="logo">
+      <span>LOGO</span>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Center Menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+      <ul class="navbar-nav nav-links">
+        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Buttons -->
+    <div class="auth-box">
+      <a href="#" class="btn-signin">Sign In</a>
+      <a href="#" class="btn-signup">Sign Up</a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="intro-section">
+  <div class="intro-container">
+
+    <!-- Upper -->
+    <div class="intro-top">
+
+      <p class="intro-eyebrow">Lorem ipsum dolor sit ame</p>
+
+      <div class="intro-title">
+        <div class="title-row">
+          <span class="ai">AI-Powered</span>
+          <span class="vision">Vision</span>
+        </div>
+        <div class="title-row">for Smarter, Safer Spaces.</div>
+      </div>
+
+      <p class="intro-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt ut labore et
+      </p>
+
+      <div class="email-box">
+  <input type="email" id="emailInput" placeholder="Enter your mail address">
+  <button id="getStartedBtn">Get Started</button>
+</div>
+
+<p id="emailMsg"></p>
+
+
+    </div>
+
+    <!-- Lower -->
+    <div class="intro-bottom">
+
+      <div class="feature">
+        <img src="images/book.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+      </div>
+
+      <div class="feature">
+        <img src="images/book.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+      </div>
+
+      <div class="feature">
+        <img src="images/book.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="overview-section">
+  <div class="overview-container">
+
+    <div class="overview-inner">
+
+      <!-- LEFT -->
+      <div class="overview-left">
+
+        <div class="overview-heading">
+          <span>Project Overview</span>
+          <h2>Lorem ipsum dolor sit amet</h2>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <div class="overview-stats">
+          <div>
+            <h3>200+</h3>
+            <span>Lorem ipsum dolo</span>
+          </div>
+          <div>
+            <h3>150+</h3>
+            <span>Lorem ipsum dolo</span>
+          </div>
+        </div>
+
+        <a href="#" class="overview-btn">
+          Get Started
+          <img src="images/get arrow.png">
+        </a>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="overview-right">
+        <img src="images/boy.png">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="features-section">
+
+  <!-- Heading -->
+  <div class="features-header">
+    <span>Features</span>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <img src="images/plus.png">
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/plus.png">
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/plus.png">
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/plus.png">
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/plus.png">
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/plus.png">
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="gallery-section">
+
+  <!-- Heading -->
+  <div class="gallery-header">
+    <span>Image Gallery</span>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <!-- Grid -->
+  <div class="gallery-grid">
+
+    <div class="gallery-column">
+      <div class="gallery-card" style="background-image:url(images/logistic.png)">
+        <div class="gallery-overlay">
+          <h4>Logistic Sector</h4>
+          <span>150 Photos</span>
+        </div>
+      </div>
+
+      <div class="gallery-card" style="background-image:url(images/corporate.png)">
+        <div class="gallery-overlay">
+          <h4>Corporate Sector</h4>
+          <span>50 Photos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-column tall">
+      <div class="gallery-card tall-card" style="background-image:url(images/health.png)">
+        <div class="gallery-overlay">
+          <h4>Healthcare Sector</h4>
+          <span>120 Photos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-column">
+      <div class="gallery-card" style="background-image:url(images/transport.png)">
+        <div class="gallery-overlay">
+          <h4>Transportation Sector</h4>
+          <span>75 Photos</span>
+        </div>
+      </div>
+
+      <div class="gallery-card" style="background-image:url(images/education.png)">
+        <div class="gallery-overlay">
+          <h4>Education Sector</h4>
+          <span>60 Photos</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="testimonial-section">
+
+  <!-- Header -->
+  <div class="testimonial-header">
+    <span>Client Testimonial</span>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="testimonial-cards">
+
+    <!-- Card -->
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-profile">
+          <img src="images/client1.png">
+          <div>
+            <h4>Annmarie Barajas</h4>
+            <span>July 23, 2025</span>
+          </div>
+        </div>
+        <img src="images/quote.png" class="quote-icon">
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-profile">
+          <img src="images/client2.png">
+          <div>
+            <h4>Bernadine Mcdaniel</h4>
+            <span>July 23, 2025</span>
+          </div>
+        </div>
+        <img src="images/quote.png" class="quote-icon">
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-top">
+        <div class="testimonial-profile">
+          <img src="images/client3.png">
+          <div>
+            <h4>Henry Klein</h4>
+            <span>July 23, 2025</span>
+          </div>
+        </div>
+        <img src="images/quote.png" class="quote-icon">
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Dots -->
+  <div class="testimonial-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</section>
+
+<section class="started-section">
+  <div class="started-container">
+
+    <!-- LEFT -->
+    <div class="started-left">
+      <h2>
+        Lorem ipsum dolor sit amet, elite lorem <br>
+        consectetur adipiscing.
+      </h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.
+      </p>
+
+      <a href="#" class="started-btn">
+        Get Started
+        <img src="images/get arrow.png">
+      </a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="started-right">
+      <img src="images/get1.png">
+      <img src="images/get2.png">
+      <img src="images/get3.png">
+      <img src="images/get4.png">
+      <img src="images/get5.png">
+      <img src="images/get6.png">
+    </div>
+
+  </div>
+</section>
+
+    <footer class="site-footer">
+
+  <!-- Top -->
+  <div class="footer-top">
+
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="images/logo.png">
+        <span>LOGO</span>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        sed do eiusmod tempor incididunt.
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <img src="images/social1.png">
+      <img src="images/social2.png">
+      <img src="images/social3.png">
+      <img src="images/social4.png">
+    </div>
+
+  </div>
+
+ <div class="footer-bottom">
+  <div class="footer-bottom-inner">
+
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+
+    <div class="footer-copy">
+      Copyright © 2025 Dummy. All rights reserved.
+    </div>
+
+  </div>
+</div>
+
+
+
+</footer>
+
+
+<script>
+const btn = document.getElementById("getStartedBtn");
+const input = document.getElementById("emailInput");
+const msg = document.getElementById("emailMsg");
+
+btn.onclick = () => {
+  const email = input.value.trim();
+
+  if (!email) {
+    msg.textContent = "Enter your email";
+    msg.className = "error";
+    return;
+  }
+
+  if (!/^[^ ]+@[^ ]+\.[a-z]{2,}$/.test(email)) {
+    msg.textContent = "Invalid email";
+    msg.className = "error";
+    return;
+  }
+
+  msg.textContent = "Submitted";
+  msg.className = "success";
+  input.value = "";
+};
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
