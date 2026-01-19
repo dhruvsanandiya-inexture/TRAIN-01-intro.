@@ -1,0 +1,179 @@
+.blog-section{
+  background:#F3F7F6;
+  padding:40px 0;
+}
+
+.blog-container{
+  max-width:1440px;
+  margin:auto;
+  padding:0 120px;
+  height:234px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  text-align:center;
+}
+
+.blog-subtitle{
+  font-size:16px;
+  font-weight:500;
+  color:#3C4049;
+}
+
+.blog-title{
+  font-family:'Archivo', sans-serif;
+  font-size:40px;
+  font-weight:500;
+  color:#262626;
+}
+
+.blog-btn{
+  width:125px;
+  height:56px;
+  padding:6px 10px;
+  border-radius:6px;
+  background:linear-gradient(117.2deg,#02B9CA,#0CC067);
+  color:#fff;
+  font-size:20px;
+  font-weight:600;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media(max-width:991px){
+  .blog-container{
+    padding:0 20px;
+    height:auto;
+  }
+
+  .blog-title{
+    font-size:28px;
+  }
+}
+
+.images-section{
+  max-width:1440px;
+  margin:auto;
+  padding:60px 0;
+}
+
+
+.images-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 384px);
+  gap:24px;
+  justify-content:center;
+}
+
+
+.image-card{
+  width:384px;
+  height:464px;
+  border:1px solid #EBECEF;
+  border-radius:12px;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.card-img{
+  width:352px;
+  height:191px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+
+.card-body{
+  border-bottom:1px solid #EBECEF;
+  padding-bottom:10px;
+}
+
+.card-body h4{
+  font-size:16px;
+  font-weight:600;
+  color:#262626;
+}
+
+.card-body p{
+  font-size:14px;
+  line-height:24px;
+  color:#3C4049;
+}
+
+.card-footer{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.author{
+  font-size:14px;
+  font-weight:500;
+  color:#262626;
+}
+
+.meta{
+  display:flex;
+  gap:20px;
+}
+
+.meta div{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.meta img{
+  width:20px;
+}
+
+
+.pagination-bar{
+  margin-top:40px;
+  padding:0 120px;
+  display:flex;
+justify-content:flex-end;
+
+  align-items:center;
+  gap:40px;
+}
+
+.page-btn{
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius:5px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.page-btn.active{
+  background:linear-gradient(117.2deg,#02B9CA,#0CC067);
+  color:#fff;
+}
+
+.page-btn.light{
+  background:linear-gradient(117.2deg, rgba(2,185,202,.1), rgba(12,192,103,.1));
+}
+
+.pages{
+  font-size:16px;
+}
+
+
+@media(max-width:991px){
+  .images-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pagination-bar{
+    padding:0 20px;
+    gap:20px;
+  }
+}

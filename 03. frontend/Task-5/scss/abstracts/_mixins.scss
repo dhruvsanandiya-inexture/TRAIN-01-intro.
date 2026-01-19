@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+@mixin container {
+  max-width: $container-max;
+  margin: auto;
+  padding: 0 $container-padding;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin respond($bp) {
+  @if $bp == lg {
+    @media (max-width: $bp-lg) { @content; }
+  }
+  @if $bp == md {
+    @media (max-width: $bp-md) { @content; }
+  }
+  @if $bp == xl {
+    @media (max-width: $bp-xl) { @content; }
+  }
+}
